@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Booking UI</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1>Hotel Booking</h1>
+    <p>Select your room & book easily</p>
+  </header>
+
+  <div class="container">
+    <!-- Booking Form -->
+    <div class="booking-form">
+      <label>
+        Check-in:
+        <input type="date" id="checkin">
+      </label>
+      <label>
+        Check-out:
+        <input type="date" id="checkout">
+      </label>
+      <label>
+        Guests:
+        <select id="guests">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4+</option>
+        </select>
+      </label>
+      <button onclick="searchRooms()">Search</button>
+    </div>
+
+    <!-- Room Grid -->
+    <div class="room-grid" id="roomGrid">
+      <div class="room-card">
+        <img src="https://picsum.photos/400/250?random=1" alt="Deluxe Room">
+        <div class="room-info">
+          <h3>Deluxe Room</h3>
+          <p>Spacious room with king bed, free WiFi, and balcony view.</p>
+          <p class="price">$120 / night</p>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <img src="https://picsum.photos/400/250?random=2" alt="Standard Room">
+        <div class="room-info">
+          <h3>Standard Room</h3>
+          <p>Cozy room with queen bed and modern amenities.</p>
+          <p class="price">$90 / night</p>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <img src="https://picsum.photos/400/250?random=3" alt="Luxury Suite">
+        <div class="room-info">
+          <h3>Luxury Suite</h3>
+          <p>Premium suite with living area, ocean view, and jacuzzi.</p>
+          <p class="price">$250 / night</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
